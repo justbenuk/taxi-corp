@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/footer";
 import FrontHeader from "@/components/header/front-header";
 import TopHeader from "@/components/header/top-header";
 import { RootProps } from "@/types/global-types";
@@ -8,6 +9,7 @@ export default function RootLayout({ children }: RootProps) {
       <TopHeader />
       <FrontHeader />
       <main>{children}</main>
+      <Footer />
     </div>
   )
 }
