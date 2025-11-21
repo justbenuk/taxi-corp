@@ -23,8 +23,8 @@ export default function BecomeaDriver() {
           transition={{ duration: 0.6, delay: 1.0 }}
           className="flex flex-col items-center space-y-2"
         >
-          <h2 className="text-4xl font-semibold">Join Our Team</h2>
-          <p className="text-muted-foreground">We are looking for professional drivers to join our team</p>
+          <h2 className="text-4xl font-semibold">Become A Driver</h2>
+          <p className="text-muted-foreground lg:w-2/3 text-center">Acorn Taxis are growing everyday. With more and more customers using Acorn as their preferred transport supplier, We are always recruiting new drivers.</p>
         </motion.div>
         <motion.div
           variants={sectionVariants}
@@ -44,14 +44,12 @@ export default function BecomeaDriver() {
           </div>
           <div className="bg-primary p-8 space-y-8">
             <div className="flex flex-col justify-center h-full space-y-6">
-              <h3 className="text-white font-semibold text-2xl">
-                Be your own boss.
-                <br />
-                Work with Acorn Taxis
+              <h3 className="text-white font-semibold text-2xl lg:w-3/4">
+                With full support, We will help you obtained the required licenses to become a taxi Driver in Tamworth
               </h3>
               <div>
                 <Button asChild variant="outline" className="bg-secondary hover:bg-secondary/90">
-                  <Link href="/become-a-driver">Learn More About Joining</Link>
+                  <Link href="/become-a-driver">Learn More</Link>
                 </Button>
               </div>
             </div>

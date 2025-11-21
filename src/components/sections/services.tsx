@@ -8,19 +8,19 @@ const services = [
     image: "/assets/shop.jpg",
     alt: "Everyday shopping and travel",
     title: "Everyday Travel",
-    description: "Safe, 24/7 travel anywhere in the country",
+    description: "Enjoy safe, round-the-clock travel to any destination. Our professional drivers are available 24/7 to ensure you reach any city or town in the country in total comfort.",
   },
   {
     image: "/assets/airport.jpg",
     alt: "Airport transfers",
     title: "Airport Transfers",
-    description: "We travel to all major airports around the country.",
+    description: "Book your airport transfer with us. We service all major airports including Birmingham, East Midlands, Luton, Heathrow, Stanstead and Gatwick",
   },
   {
     image: "/assets/corp.jpg",
     alt: "Corporate accounts",
     title: "Corporate Accounts",
-    description: "Monthly invoicing, with itemised billing for business clients",
+    description: "Streamline your company expenses with our priority account service. We offer consolidated monthly invoicing and fully itemized billing to simplify financial management for your business.",
   },
 ];
 
