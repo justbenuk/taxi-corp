@@ -1,0 +1,39 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+export default function HeroSection() {
+  return (
+    <section
+      style={{ backgroundImage: `url('/assets/hero.jpg')`, backgroundPosition: 'center' }}
+      className="h-[50dvh]"
+    >
+      <div className="bg-gradient-to-r from-primary via-primary/80 to-transparent h-full">
+        <div className="max-w-7xl mx-auto px-6 2xl:px-0 h-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 h-full">
+            <div className="h-full flex flex-col justify-center">
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="text-white font-medium text-6xl"
+              >
+                Tamworth&apos;s Premier 24/7 Transportation Service
+              </motion.h1>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="text-secondary mt-4 text-xl"
+              >
+                <p>Reliability for residents</p>
+                <p>Excellent for Business</p>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
