@@ -126,7 +126,7 @@ export default function Testimonials({
 
                     {/* Review Text */}
                     <p className="text-muted-foreground mb-6 italic">
-                      "{testimonial.text}"
+                      &ldquo;{testimonial.text}&rdquo;
                     </p>
 
                     {/* Customer Info */}
@@ -145,7 +145,7 @@ export default function Testimonials({
           <motion.div variants={itemVariants} className="text-center mt-12">
             <div className="inline-block bg-background rounded-lg p-6 shadow-md">
               <div className="flex items-center justify-center mb-2">
-                <span className="text-4xl font-bold mr-2">4.9</span>
+                <span className="text-4xl font-bold mr-2">4.5</span>
                 <div>
                   <div className="flex">
                     {[...Array(5)].map((_, i) => (
@@ -155,7 +155,7 @@ export default function Testimonials({
                       />
                     ))}
                   </div>
-                  <p className="text-sm text-muted-foreground">Based on 500+ reviews</p>
+                  <p className="text-sm text-muted-foreground">Based on 1,200+ reviews</p>
                 </div>
               </div>
             </div>

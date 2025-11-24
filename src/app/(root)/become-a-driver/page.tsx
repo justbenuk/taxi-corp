@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import { Car, Wallet, Clock, Users, Shield, TrendingUp, Phone, Mail, Check, HelpCircle } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import HeroSection from "@/components/sections/hero";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -79,7 +79,7 @@ const faqs = [
   },
   {
     question: "How much can I earn?",
-    answer: "Earnings vary depending on hours worked, but many of our drivers earn £500-£800+ per week. You keep 80% of all fares."
+    answer: "Earnings vary depending on hours worked, but many of our drivers earn £500-£1,200+ per week. You keep 100% of all fares."
   },
   {
     question: "What are the working hours?",
@@ -91,7 +91,7 @@ const faqs = [
   },
   {
     question: "Is there a joining fee?",
-    answer: "There's a small weekly subscription to cover the dispatch system and support services. We'll explain all costs upfront with no hidden fees."
+    answer: "No there is no Joining Fee"
   },
   {
     question: "How do I receive payments?",
@@ -140,49 +140,7 @@ export default function BecomeADriverPage() {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      {/* Hero Section */}
-      <div className="relative bg-primary text-secondary py-20 lg:py-28">
-        <PageContainer>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              <Badge className="mb-4 bg-accent text-primary">Join Our Team</Badge>
-              <h1 className="text-4xl lg:text-5xl font-bold mb-6">Become an Acorn Driver</h1>
-              <p className="text-lg lg:text-xl mb-8 text-secondary/90">
-                Join Tamworth's most established taxi company. Enjoy flexible hours, competitive earnings,
-                and the support of a professional team with over 50 years of experience.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-accent text-primary hover:bg-accent/90">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call 01827 63333
-                </Button>
-                <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-primary">
-                  <Mail className="mr-2 h-5 w-5" />
-                  Email Us
-                </Button>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-2xl"
-            >
-              <Image
-                src="/assets/driver.jpg"
-                alt="Become a driver"
-                fill
-                className="object-cover"
-              />
-            </motion.div>
-          </div>
-        </PageContainer>
-      </div>
+      <HeroSection title="Become A Driver" description="Join Tamworth's most established taxi company. Enjoy flexible hours, competitive earnings, and the support of a professional team with over 50 years of experience." url="/assets/driver.jpg" />
 
       {/* Benefits Section */}
       <section className="py-16 lg:py-24 bg-background">
