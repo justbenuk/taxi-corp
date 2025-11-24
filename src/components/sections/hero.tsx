@@ -1,11 +1,12 @@
 "use client";
-
+import { HeroProps } from "@/types/hero-types";
 import { motion } from "framer-motion";
-export default function HeroSection() {
+
+export default function HeroSection({ title, description, url }: HeroProps) {
   return (
     <section
-      style={{ backgroundImage: `url('/assets/hero.jpg')`, backgroundPosition: 'center' }}
-      className="h-[50dvh]"
+      style={{ backgroundImage: `url('${url}')`, backgroundPosition: 'center', backgroundSize: '100%', backgroundRepeat: 'no-repeat' }}
+      className="h-[40dvh] w-full"
     >
       <div className="bg-linear-to-r from-primary via-primary/80 to-transparent h-full">
         <div className="max-w-7xl mx-auto px-6 2xl:px-0 h-full">
@@ -17,7 +18,7 @@ export default function HeroSection() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-white font-medium text-4xl lg:text-6xl"
               >
-                Setting the Standard for Corporate & Local Travel.
+                {title}
               </motion.h1>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -25,7 +26,7 @@ export default function HeroSection() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="text-secondary mt-4 text-xl lg:w-3/4"
               >
-                <p>The trusted partner for Tamworth’s businesses and residents for over 50 years.</p>
+                <p>{description}</p>
               </motion.div>
             </div>
             <div className="flex flex-col justify-center items-end">

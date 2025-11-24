@@ -5,7 +5,7 @@ import { RootProps } from "@/types/global-types";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Acorn Taxis",
+    template: "%s | Acorn Taxis - 01827 63333",
     default: "Acorn Taxis"
   },
   description: "Tamworths premier transportation company, available 24/7, 01827 633333",

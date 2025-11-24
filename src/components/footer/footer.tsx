@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { MENUITEMS } from "@/data/menu-items";
 import Link from "next/link";
+import { FacebookIcon, InstagramIcon, LinkedinIcon, TicketIcon } from "lucide-react";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -39,7 +40,7 @@ const linkVariants = {
 export default function Footer() {
   return (
     <footer className="bg-primary text-white">
-      <div className="max-w-7xl mx-auto px-6 2xl:px-0 py-10">
+      <div className="max-w-7xl mx-auto px-6 2xl:px-0 pt-10 pb-4">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -104,10 +105,25 @@ export default function Footer() {
             </nav>
           </motion.div>
 
-          <motion.div variants={columnVariants}>
+          <motion.div variants={columnVariants} className="space-y-2">
             <h2 className="text-lg font-semibold mb-2">Follow Us</h2>
+            <div className="flex flex-row space-x-2">
+              <Link href={'/'}>
+                <FacebookIcon />
+              </Link>
+              <Link href={'/'}>
+                <InstagramIcon />
+              </Link>
+              <Link href={'/'}>
+                <LinkedinIcon />
+              </Link>
+            </div>
+            <p className="font-semibold">We are looking for drivers</p>
           </motion.div>
         </motion.div>
+        <div className="border-t border-gray-700 pt-4 mt-10">
+          <p className="text-xs">Copyright (c) 2025. All Rights Reserved. Acorn Cars LTD</p>
+        </div>
       </div>
     </footer>
   );

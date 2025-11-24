@@ -5,6 +5,8 @@ import BecomeaDriver from "@/components/sections/become-a-driver";
 import HeroSection from "@/components/sections/hero";
 import HeroFooter from "@/components/sections/hero-footer";
 import Services from "@/components/sections/services";
+import Testimonials from "@/components/sections/testimonials";
+import FAQ from "@/components/sections/faq";
 
 export default function Home() {
   return (
@@ -13,10 +15,12 @@ export default function Home() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <HeroSection />
+      <HeroSection title='Setting the standard for corporate & local travel.' description="The trusted partner for Tamworth businesses and residents for over 50 years" url='/assets/hero.jpg' />
       <HeroFooter />
       <Services />
+      <Testimonials showAll={false} />
       <BecomeaDriver />
+      <FAQ />
     </motion.main>
   );
 }

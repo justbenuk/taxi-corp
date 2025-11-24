@@ -45,7 +45,7 @@ export default function BecomeaDriver() {
           <div className="bg-primary p-8 space-y-8">
             <div className="flex flex-col justify-center h-full space-y-6">
               <h3 className="text-white font-semibold text-2xl lg:w-3/4">
-                With full support, We will help you obtained the required licenses to become a taxi Driver in Tamworth
+                With full support, We will help you obtain the required licenses to become a taxi Driver in Tamworth
               </h3>
               <div>
                 <Button asChild variant="outline" className="bg-secondary hover:bg-secondary/90">
