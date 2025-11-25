@@ -129,9 +129,9 @@ export default function CorporateAccountsPage() {
             <div className="max-w-4xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {[
-                  { step: "1", title: "Contact Us", description: "Call us on 01827 63333 or email to discuss your requirements" },
-                  { step: "2", title: "Set Up Account", description: "We'll create your account and add your team members" },
-                  { step: "3", title: "Start Booking", description: "Book rides online, by phone, or through our app" }
+                  { step: "1", title: "Contact Us", description: "Call us on 01827 63333 or email accounts@acorntaxis.co.uk" },
+                  { step: "2", title: "Set Up Account", description: "We'll create your account and add any requirements" },
+                  { step: "3", title: "Start Booking", description: "Start booking your Journeys straight away" }
                 ].map((item, index) => (
                   <motion.div key={index} variants={itemVariants} className="text-center">
                     <div className="h-16 w-16 rounded-full bg-accent text-primary text-2xl font-bold flex items-center justify-center mx-auto mb-4">
