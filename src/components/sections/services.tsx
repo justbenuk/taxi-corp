@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const services = [
   {
-    image: "/assets/shop.jpg",
+    image: "/assets/every.jpg",
     alt: "Everyday shopping and travel",
     title: "Everyday Travel",
     description: "Enjoy safe, round-the-clock travel to any destination. Our professional drivers are available 24/7 to ensure you reach any city or town in the country in total comfort.",

@@ -3,10 +3,8 @@
 import PageContainer from "@/components/page-container";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import { Car, Wallet, Clock, Users, Shield, TrendingUp, Phone, Mail, Check, HelpCircle } from "lucide-react";
-import Image from "next/image";
 import HeroSection from "@/components/sections/hero";
 
 const containerVariants = {
@@ -192,9 +190,9 @@ export default function BecomeADriverPage() {
             viewport={{ once: true }}
           >
             <motion.div variants={itemVariants} className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4">What You'll Need</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold mb-4">What You&apos;ll Need</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Here's what's required to become a driver with Acorn Taxis
+                Here&apos;s what&apos;s required to become a driver with Acorn Taxis
               </p>
             </motion.div>
 
@@ -204,7 +202,7 @@ export default function BecomeADriverPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {requirements.map((requirement, index) => (
                       <div key={index} className="flex items-start">
-                        <Check className="h-5 w-5 text-accent mr-3 flex-shrink-0 mt-0.5" />
+                        <Check className="h-5 w-5 text-accent mr-3 shrink-0 mt-0.5" />
                         <span>{requirement}</span>
                       </div>
                     ))}
@@ -212,7 +210,7 @@ export default function BecomeADriverPage() {
 
                   <div className="mt-8 p-4 bg-accent/10 rounded-lg">
                     <p className="text-sm">
-                      <strong>Don't have everything yet?</strong> Don't worry! We can help guide you through
+                      <strong>Don&apos;t have everything yet?</strong> Don&apos;t worry! We can help guide you through
                       obtaining your private hire licence and DBS check. Get in touch to discuss your situation.
                     </p>
                   </div>
@@ -235,7 +233,7 @@ export default function BecomeADriverPage() {
             <motion.div variants={itemVariants} className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4">How to Join</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Getting started is straightforward. We'll support you every step of the way.
+                Getting started is straightforward. We&apos;ll support you every step of the way.
               </p>
             </motion.div>
 
@@ -275,7 +273,7 @@ export default function BecomeADriverPage() {
               <HelpCircle className="h-12 w-12 text-accent mx-auto mb-4" />
               <h2 className="text-3xl lg:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Got questions? We've got answers.
+                Got questions? We&apos;ve got answers.
               </p>
             </motion.div>
 
@@ -285,7 +283,7 @@ export default function BecomeADriverPage() {
                   <Card>
                     <CardHeader>
                       <CardTitle className="text-lg flex items-start">
-                        <HelpCircle className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" />
+                        <HelpCircle className="h-5 w-5 text-accent mr-2 shrink-0 mt-0.5" />
                         {faq.question}
                       </CardTitle>
                     </CardHeader>
@@ -299,7 +297,7 @@ export default function BecomeADriverPage() {
 
             <motion.div variants={itemVariants} className="text-center mt-12">
               <p className="text-muted-foreground mb-4">
-                Have more questions? We're here to help!
+                Have more questions? We&apos;re here to help!
               </p>
               <Button className="bg-accent text-primary hover:bg-accent/90">
                 <Phone className="mr-2 h-5 w-5" />
@@ -324,7 +322,7 @@ export default function BecomeADriverPage() {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Ready to Start Your Journey?</h2>
             <p className="text-lg mb-8 text-secondary/90">
               Join our team of professional drivers and enjoy the flexibility and earnings you deserve.
-              With over 50 years serving Tamworth, we're a name you can trust.
+              With over 50 years serving Tamworth, we&apos;re a name you can trust.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-accent text-primary hover:bg-accent/90">
