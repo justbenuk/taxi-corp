@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 export default function HeroSection({ title, description, url }: HeroProps) {
   return (
     <section
-      style={{ backgroundImage: `url('${url}')`, backgroundPosition: 'right', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', width: '100%' }}
+      style={{ backgroundImage: `url('${url}')`, backgroundPosition: 'right', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', }}
       className="h-[40dvh] w-full"
     >
-      <div className="bg-linear-to-r from-primary via-primary to-primary md:to-transparent h-full">
+      <div className="bg-linear-to-r from-primary via-primary/90 to-primary md:to-transparent h-full">
         <div className="max-w-7xl mx-auto px-6 2xl:px-0 h-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 h-full">
-            <div className="h-full flex flex-col justify-center">
+            <div className="flex flex-col justify-center">
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ export default function HeroSection({ title, description, url }: HeroProps) {
                 <p>{description}</p>
               </motion.div>
             </div>
-            <div className="flex flex-col justify-center items-end">
+            <div className="hidden lg:flex flex-col justify-center items-end">
             </div>
           </div>
         </div>

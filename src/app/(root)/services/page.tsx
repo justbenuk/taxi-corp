@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { Plane, ShoppingBag, Building2, Car, MapPin, CreditCard, Clock, Shield, Check } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import HeroSection from "@/components/sections/hero";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -114,26 +115,10 @@ export default function ServicesPage() {
       transition={{ duration: 0.5 }}
     >
       {/* Hero Section */}
-      <div className="relative bg-primary text-secondary py-20 lg:py-28">
-        <PageContainer>
-          <motion.div
-            className="max-w-3xl"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <Badge className="mb-4 bg-accent text-primary">Our Services</Badge>
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">Professional Taxi Services</h1>
-            <p className="text-lg lg:text-xl mb-8 text-secondary/90">
+      <HeroSection title="Professional Taxi Services" description="
               With over 50 years of experience, Acorn Taxis provides reliable, safe, and comfortable
               transportation across Tamworth and beyond. Available 24/7 for all your travel needs.
-            </p>
-            <Button size="lg" className="bg-accent text-primary hover:bg-accent/90" asChild>
-              <Link href="/book-now">Book Now</Link>
-            </Button>
-          </motion.div>
-        </PageContainer>
-      </div>
+            " url="/assets/hero.jpg" />
 
       {/* Main Services */}
       <section className="py-16 lg:py-24 bg-background">
@@ -147,7 +132,7 @@ export default function ServicesPage() {
             <motion.div variants={itemVariants} className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4">Our Core Services</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Whatever your transportation needs, we've got you covered
+                Whatever your transportation needs, we&apos;ve got you covered
               </p>
             </motion.div>
 
@@ -172,7 +157,7 @@ export default function ServicesPage() {
                       <div className="grid grid-cols-2 gap-3 mb-6">
                         {service.features.map((feature, idx) => (
                           <div key={idx} className="flex items-start">
-                            <Check className="h-5 w-5 text-accent mr-2 flex-shrink-0 mt-0.5" />
+                            <Check className="h-5 w-5 text-accent mr-2 shrink-0 mt-0.5" />
                             <span className="text-sm">{feature}</span>
                           </div>
                         ))}
@@ -327,14 +312,14 @@ export default function ServicesPage() {
                   "Shuttington"
                 ].map((area, index) => (
                   <motion.div key={index} variants={itemVariants} className="flex items-center">
-                    <Check className="h-5 w-5 text-accent mr-2 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-accent mr-2 shrink-0" />
                     <span>{area}</span>
                   </motion.div>
                 ))}
               </div>
 
               <p className="text-muted-foreground">
-                Don't see your area? Give us a call on <span className="font-semibold text-accent">01827 63333</span> - we may still be able to help!
+                Don&apos;t see your area? Give us a call on <span className="font-semibold text-accent">01827 63333</span> - we may still be able to help!
               </p>
             </motion.div>
           </motion.div>

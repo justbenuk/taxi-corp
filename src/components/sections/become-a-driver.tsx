@@ -7,7 +7,7 @@ export default function BecomeaDriver() {
   return (
     <section className="bg-secondary py-20">
       <div className="max-w-7xl mx-auto px-6 2xl:px-0 space-y-8">
-        <AnimationBlock className="flex flex-col items-center space-y-2">
+        <AnimationBlock className="flex flex-col items-center space-y-2 text-center">
           <h2 className="text-4xl font-semibold">Become A Driver</h2>
           <p className="text-muted-foreground lg:w-2/3 text-center">Acorn Taxis are growing everyday. With more and more customers using Acorn as their preferred transport supplier, We are always recruiting new drivers.</p>
         </AnimationBlock>
